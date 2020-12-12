@@ -18,12 +18,10 @@
   "devDependencies": {
     "typescript": "^3.2.4",
     "@capacitor/ios": "latest",
-    "@capacitor/android": "latest"
   },
   "files": [
     "dist/",
     "ios/",
-    "android/",
     "CapacitorPluginIosSwipeBack.podspec"
   ],
   "keywords": [
@@ -36,9 +34,6 @@
     "ios": {
       "src": "ios"
     },
-    "android": {
-      "src": "android"
-    }
   },
   "repository": {
     "type": "git",
