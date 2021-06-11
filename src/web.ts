@@ -1,7 +1,7 @@
 import { WebPlugin } from '@capacitor/core';
 import { IosSwipeBackPlugin } from './definitions';
 
-export class IosSwipeBackWeb extends WebPlugin implements IosSwipeBackPlugin {
+export class SwipeBackWeb extends WebPlugin implements IosSwipeBackPlugin {
   constructor() {
     super({
       name: 'IosSwipeBack',
@@ -17,10 +17,3 @@ export class IosSwipeBackWeb extends WebPlugin implements IosSwipeBackPlugin {
     return options;
   }
 }
-
-const IosSwipeBack = new IosSwipeBackWeb();
-
-export { IosSwipeBack };
-
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(IosSwipeBack);
